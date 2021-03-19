@@ -10,33 +10,24 @@ Este repositório tem por finalidade armazenar os arquivos criados durante o dec
 ## Comandos uteis
 
 ### Inicializa o arquivo de definição yaml
-kubectl apply -f {nome_do_yaml}
-
+```kubectl apply -f {nome_do_yaml}```
 ### Atualizando configurações
-kubectl apply -f {nome_do_yaml} --record
-
+```kubectl apply -f {nome_do_yaml} --record```
 ### Excluir o arquivo de definição yaml
-kubectl delete -f {nome_do_yaml}
-
+```kubectl delete -f {nome_do_yaml}```
 ### Lista os pods
-kubectl get pods
-
+```kubectl get pods```
 ### Lista os serviços
-kubectl get svc
-
+```kubectl get svc```
 ### Lista o configmap
-kubectl get configmap
-
+```kubectl get configmap```
 ### Lista os replicaset
-kubectl get replicaset
-
+```kubectl get replicaset```
 ### Lista os deployment
-kubectl get deployment
+```kubectl get deployment```
 ### Mostra o histórico de mudanças de um deployment
-kubectl rollout history deployment nginx-deployment
-
+```kubectl rollout history deployment nginx-deployment```
 ### Altera a descrição do motivo da mudanças de um deployment ( controle de versionamento )
-kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com a versão latest"
-
+```kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com a versão latest"```
 ### Retornar para versão anterior
-kubectl rollout undo deployment nginx-deployment --to-revision=2
+```kubectl rollout undo deployment nginx-deployment --to-revision=2```
