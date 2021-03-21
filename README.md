@@ -1,13 +1,19 @@
-# kubernetes-alura
+# <p style="text-align: center;">kubernetes-alura
 
-## Estudando kubernetes com a Alura 
+## <p style="text-align: center;">Estudando kubernetes com a Alura 
 
 Link: https://cursos.alura.com.br/formacao-devops
 
 Este repositório tem por finalidade armazenar os arquivos criados durante o decorrer do curso.
 
+---
+## <p style="text-align: center;">Preparando estrutura
 
-## Comandos uteis
+Para instalar os pacotes para os estudos execute os comando abaixo.
+```./install.sh```
+
+---
+## <p style="text-align: center;">Comandos uteis
 
 ### Inicializa o arquivo de definição yaml
 ```kubectl apply -f {nome_do_yaml}```
