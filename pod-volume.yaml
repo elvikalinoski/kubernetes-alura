@@ -10,12 +10,12 @@ spec:
         - mountPath: /volume-dentro-do-container
           name: primeiro-volume
     - name: jenkins-container
-      image: jenkins:alpine
+      image: jenkins/jenkins:alpine
       volumeMounts:
         - mountPath: /volume-dentro-do-container
           name: primeiro-volume
   volumes:  
     - name: primeiro-volume
       hostPath:
-        path: /home/elvi/Documents/repository/kubernetes-alura/primeiro-volume
-        type: Directory
+        path: /home/primeiro-volume
+        type: DirectoryOrCreate

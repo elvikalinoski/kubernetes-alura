@@ -17,3 +17,9 @@ sudo apt-get install curl -y
 
 # Instalando o minikube
 ./conf/minikube.sh
+
+# Start minikube
+minikube start --vm-driver=virtualbox
+
+# Abre o Vscode
+vscode .
